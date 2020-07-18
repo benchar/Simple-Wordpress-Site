@@ -1,0 +1,28 @@
+[{
+	"name": "wordpress",
+	"image": "docker.io/wordpress",
+	"cpu": 10,
+	"memory": 512,
+	"essential": true,
+	"portMappings": [{
+		"containerPort": 80,
+		"hostPort": 80
+	}],
+	"environment": [{
+			"name": "WORDPRESS_DB_HOST",
+			"value": ""
+		},
+		{
+			"name": "WORDPRESS_DB_NAME",
+			"value": ""
+		},
+		{
+			"name": "WORDPRESS_DB_PASSWORD",
+			"value": ""
+		},
+		{
+			"name": "WORDPRESS_DB_USER",
+			"value": ""
+		}
+	]
+}]
