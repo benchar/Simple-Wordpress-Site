@@ -6,7 +6,7 @@ For ECS, I used Fargate for this demonstration. I created a task definition that
 
 For RDS, I choose Aurora Serverless because you pay for only what you consume and the auto-pause feature helps keep my account in the free tier. I created a security group that allows inbound traffic to my ECS security group.
 
-The Terraform module will output the RDS endpoint and ALB DNS name, so you don't have to rummage through the console.
+The Terraform module will output the RDS endpoint and ALB DNS name, so you don't have to rummage through the console. Database name, username, and password are default for simplicity.
 
 
 ![ECS/ALB/RDS/VPC Architecture](arch.png)
