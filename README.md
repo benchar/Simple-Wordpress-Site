@@ -8,4 +8,5 @@ For RDS, I choose Aurora Serverless because you pay for only what you consume an
 
 The Terraform module will output the RDS endpoint and ALB DNS name, so you don't have to rummage through the console.
 
+
 ![ECS/ALB/RDS/VPC Architecture](arch.png)
