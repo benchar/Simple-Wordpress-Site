@@ -1,5 +1,4 @@
 # Simple-WordPress-Site
-![ECS/ALB/RDS/VPC Architecture](arch.png)
 
 I created a VPC with public and private subnets. I have also attached an internet gateway to a new route table and associated this route table with the public subnets. The private subnets are associated with the default VPC route table.
 
@@ -8,3 +7,5 @@ For ECS, I used Fargate for this demonstration. I created a task definition that
 For RDS, I choose Aurora Serverless because you pay for only what you consume and the auto-pause feature helps keep my account in the free tier. I created a security group that allows inbound traffic to my ECS security group.
 
 The Terraform module will output the RDS endpoint and ALB DNS name, so you don't have to rummage through the console.
+
+![ECS/ALB/RDS/VPC Architecture](arch.png)
